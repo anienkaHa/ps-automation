@@ -133,7 +133,6 @@ exports.config = {
         timeout: 60000
     },
     //
-    // =====
     // Hooks
     // =====
     // WebdriverIO provides several hooks you can use to interfere with the test process in order to enhance
