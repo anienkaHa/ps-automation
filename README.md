@@ -10,5 +10,4 @@
 npm install
 
 ## Running Tests (Run tests in the *webdriverio-test* folder)
-Run tests in the *webdriverio-test* folder 
 ./node_modules/.bin/wdio wdio.conf.js
