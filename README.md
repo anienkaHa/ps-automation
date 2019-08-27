@@ -9,6 +9,6 @@
 ## Before Running Tests - Install Dependencies
 npm install
 
-## Running Tests
-*Run the below in a terminal that is pointing to the webdriverio-test folder* 
- ./node_modules/.bin/wdio wdio.conf.js
+## Running Tests (Run tests in the *webdriverio-test* folder)
+Run tests in the *webdriverio-test* folder 
+./node_modules/.bin/wdio wdio.conf.js
