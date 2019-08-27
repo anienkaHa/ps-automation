@@ -6,18 +6,18 @@ const randomNumber = (maxNumber) => {
 
 const scrollInfinite = (number) => {
     const scrollableElement = $('//*[@id="content"]/div/div/div/div')
-    let i = 1
-    scrollableElement.scrollIntoView(false)
-    browser.pause(100)
-    scrollableElement.scrollIntoView(false)
-    scrollableElement.scrollIntoView(false)
-    while ( i <= number){
+    let i =1
+   while ( i <= number){
+        
+        browser.pause(1000)
         scrollableElement.scrollIntoView(false)
-        browser.pause(100)
+        browser.pause(1000)
         scrollableElement.scrollIntoView(false)
+        browser.pause(1000)
         scrollableElement.scrollIntoView(false)
+        browser.pause(1000)
         i++
-    }
+   }
 }
 
 const checkBoxes = () => {

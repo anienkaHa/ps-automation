@@ -127,7 +127,7 @@ describe('Run Utility Methods', () => {
     })
     it('should scroll down the page as many times as supplied and allow 3 refreshes', () => {
         browser.url('http://the-internet.herokuapp.com/infinite_scroll');
-        
+        scrollInfinite(2)
     })
 })
 
