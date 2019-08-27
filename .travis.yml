@@ -5,7 +5,7 @@ addons:
   chrome: beta
 before_install:
   - # start your web application and listen on `localhost`
-  - google-chrome-stable --headless --no-sandbox --remote-debugging-port=9222 http://localhost:80
+  - google-chrome-beta --headless --disable-gpu --no-sandbox --remote-debugging-port=9222 http://localhost:80
 cache:
   directories:
   - node_modules
