@@ -2,10 +2,10 @@ language: node_js
 node_js:
   - "stable"
 addons:
-  chrome: stable
+  chrome: beta
 before_install:
   - # start your web application and listen on `localhost`
-  - google-chrome-stable --headless --no-sandbox --remote-debugging-port=9222 http://localhost:80 # or some such
+  - google-chrome-stable --headless --no-sandbox --remote-debugging-port=9222 http://localhost:80
 cache:
   directories:
   - node_modules
