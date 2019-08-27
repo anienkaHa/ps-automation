@@ -6,9 +6,9 @@ const randomNumber = (maxNumber) => {
 
 const scrollInfinite = (number) => {
     const scrollableElement = $('//*[@id="content"]/div/div/div/div')
-    let i =1
-   while ( i <= number){
-        
+    let i = 1
+    while (i <= number) {
+
         browser.pause(1000)
         scrollableElement.scrollIntoView(false)
         browser.pause(1000)
@@ -17,7 +17,7 @@ const scrollInfinite = (number) => {
         scrollableElement.scrollIntoView(false)
         browser.pause(1000)
         i++
-   }
+    }
 }
 
 const checkBoxes = () => {
@@ -44,7 +44,7 @@ const selectDropDown = () => {
     if (randomOption === 1) {
         dropDownOption1.click()
         return dropDownOption1.isSelected()
-        
+
     }
 
     if (randomOption === 2) {
@@ -53,7 +53,7 @@ const selectDropDown = () => {
     }
 }
 
-module.exports={
+module.exports = {
     scrollInfinite,
     checkBoxes,
     selectDropDown
