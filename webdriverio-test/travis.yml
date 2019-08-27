@@ -1,5 +1,15 @@
 language: node_js
 node_js:
-  - "0.10"
-before_script:
-  - npm install
+  - "stable"
+cache:
+  directories:
+  - node_modules
+script:
+  - ./node_modules/.bin/wdio wdio.conf.js
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: 68da8fed70cf6e033ef27d9370119f6fd483e890
+  local_dir: build
+  on:
+    branch: master
