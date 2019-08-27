@@ -2,10 +2,10 @@ language: node_js
 node_js:
   - "stable"
 addons:
-  chrome: beta
+  chrome: stable
 before_install:
   - # start your web application and listen on `localhost`
-  - "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --disable-gpu --remote-debugging-port=9222 http://localhost &"
+  - google-chrome-stable --headless --no-sandbox --remote-debugging-port=9222 http://localhost:80 # or some such
 cache:
   directories:
   - node_modules
